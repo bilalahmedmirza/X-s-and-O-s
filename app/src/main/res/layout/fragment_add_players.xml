@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context="com.bilalmirza.xsandos.AddPlayersFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/lavender_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_player_names"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/enterPlayerOneName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/x_icon"
+                android:drawablePadding="8dp"
+                android:hint="@string/enter_player_one_name"
+                android:inputType="text|textNoSuggestions"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/lavender"
+                android:textStyle="normal"
+                tools:ignore="Autofill,TextFields,VisualLintTextFieldSize,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/enterPlayerTwoName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/o_icon"
+                android:drawablePadding="8dp"
+                android:hint="@string/enter_player_two_name"
+                android:inputType="text|textNoSuggestions"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/lavender"
+                android:textStyle="normal"
+                tools:ignore="Autofill,TextFields,TextContrastCheck,VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/startGameButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/start_game"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">X\'s and O\'s</string>
+    <string name="enter_player_names">ENTER \n PLAYER NAMES</string>
+    <string name="enter_player_one_name">Enter player one name</string>
+    <string name="enter_player_two_name">Enter player two name</string>
+    <string name="start_game">Start Game</string>
+    <string name="rules">Go back to change your names or press the above button to play the game again.</string>
+    <string name="player_one">Player One</string>
+    <string name="player_two">Player Two</string>
+    <string name="content_desc">Picture of X or O.</string>
+    <string name="results">Results</string>
+    <string name="start_again">Start Again</string>
+    <string name="change_names">Change Names</string>
+</resources>

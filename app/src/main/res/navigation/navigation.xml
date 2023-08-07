@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/addPlayersFragment">
+
+    <fragment
+        android:id="@+id/addPlayersFragment"
+        android:name="com.bilalmirza.xsandos.AddPlayersFragment"
+        android:label="fragment_add_players"
+        tools:layout="@layout/fragment_add_players" >
+        <action
+            android:id="@+id/action_addPlayersFragment_to_game_Fragment"
+            app:destination="@id/game_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/game_Fragment"
+        android:name="com.bilalmirza.xsandos.Game_Fragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <argument
+            android:name="name1"
+            app:argType="string" />
+        <argument
+            android:name="name2"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_game_Fragment_to_resultDialogFragment2"
+            app:destination="@id/resultDialogFragment2"
+            app:popUpTo="@id/game_Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultDialogFragment2"
+        android:name="com.bilalmirza.xsandos.ResultDialogFragment"
+        android:label="fragment_result_dialog"
+        tools:layout="@layout/fragment_result_dialog" >
+        <argument
+            android:name="result"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resultDialogFragment2_to_game_Fragment"
+            app:destination="@id/game_Fragment"
+            app:popUpTo="@id/addPlayersFragment" />
+        <argument
+            android:name="playerName1"
+            app:argType="string" />
+        <argument
+            android:name="playerName2"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resultDialogFragment2_to_addPlayersFragment"
+            app:destination="@id/addPlayersFragment"
+            app:popUpTo="@id/addPlayersFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
