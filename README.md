@@ -7,7 +7,7 @@ A multiplayer Tic Tac Toe app to have endless fun with your friends!
 ```bash
   ➞ Simple and beautiful UI.
   ➞ Change names after a match or restart with the same names.
-  ➞ 100% Kotlin, used Navigation Components and XML.
+  ➞ Used Kotlin Navigation Components and Kotlin Safe Args.
 ```
     
 ## Screenshots
